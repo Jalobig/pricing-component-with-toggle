@@ -1,0 +1,30 @@
+.main {
+  height: 100vh;
+  position: relative;
+  @media only screen and (max-width: 900px) {
+    height: unset;
+    overflow-y: hidden;
+  }
+}
+.bg {
+  &__top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    @media only screen and (max-width: 900px) {
+      top: -2rem;
+      right: -12rem;
+    }
+    
+  }
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+}

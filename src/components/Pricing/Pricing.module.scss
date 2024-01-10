@@ -1,0 +1,99 @@
+.pricing {
+  max-width: 65.625rem;
+  margin: auto;
+  text-align: center;
+  &__heading {
+    color: var(--color-dark-gray);
+    padding: 5rem 0 2rem 0;
+  }
+  &__subheading {
+    color: var(--color-gray);
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15rem;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  &__switch {
+    position: relative;
+    height: 1.875rem;
+    width: 3.4375rem;
+    background-image: linear-gradient(var(--primary-gradient));
+    border-radius: 1rem;
+    border: none;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.4;
+      cursor: pointer;
+    }
+    &--toggle {
+      position: absolute;
+      right: 0.2rem;
+      top: 0.2rem;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 1rem;
+      background-color: var(--color-lightest-gray);
+    }
+  }
+  &__cardrow {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    @media only screen and (max-width:900px) {
+      flex-direction: column;
+    }
+  }
+  &__card {
+    height: 28.125rem;
+    width: 100%;
+    background-color: white;
+    color: var(--color-gray);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0rem 1rem 1rem .1rem var(--color-primary-shadow);
+    @media only screen and (max-width:900px) {
+     width: 20.3125rem; 
+     margin-bottom: 2rem;
+    }
+    &--heading {
+      margin-bottom: 1.5rem;
+    }
+    &--amount {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      & span {
+        font-size: 2rem;
+        margin-right: 0.5rem;
+      }
+    }
+
+    &--primary {
+      padding: 3.5rem;
+      height: 31.25rem;
+      background-image: linear-gradient(var(--primary-gradient));
+      color: white;
+    }
+    &--features {
+      margin-bottom: 1.5rem;
+    }
+    &--feature {
+      border-top: 1px solid var(--color-light-gray);
+      padding: 1rem;
+      &:last-child {
+        border-bottom: 1px solid var(--color-light-gray);
+      }
+    }
+  }
+}
+
+.active {
+  left: 0.2rem;
+  right: unset;
+}

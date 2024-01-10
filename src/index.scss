@@ -1,0 +1,30 @@
+:root {
+  // Colors
+
+  /// Primary
+  --color-primary-light: hsl(236, 72%, 79%);
+  --color-primary: hsl(237, 63%, 64%);
+  --primary-gradient: to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%);
+  
+  /// Neutral
+  
+  --color-primary-shadow: hsla(236, 72%, 79%, 0.5);
+  --color-lightest-gray: hsl(240, 78%, 98%);
+  --color-light-gray: hsl(234, 14%, 74%);
+  --color-gray: hsl(233, 13%, 49%);
+  --color-dark-gray: hsl(232, 13%, 33%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-lightest-gray);
+  font-family: "Montserrat", sans-serif;
+}

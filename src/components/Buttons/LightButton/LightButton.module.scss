@@ -1,0 +1,10 @@
+.btn__light {
+  background-color: white;
+  color: var(--color-primary);
+  transition: all 0.3s;
+  &:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+  }
+}
