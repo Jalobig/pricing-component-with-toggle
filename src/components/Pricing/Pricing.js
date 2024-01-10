@@ -3,11 +3,8 @@ import classes from "./Pricing.module.scss";
 import DarkButton from "../Buttons/DarkButton/DarkButton";
 import LightButton from "../Buttons/LightButton/LightButton";
 
-const Pricing = () => {
-  const [isAnnually, setIsAnnually] = useState(false);
-  const switchHandler = () => {
-    setIsAnnually((prevState) => !prevState);
-  };
+const Pricing = (props) => {
+  const { isAnnually, switchHandler } = props;
   return (
     <div className={classes.pricing}>
       <h1 className={classes.pricing__heading}>Our Pricing</h1>
